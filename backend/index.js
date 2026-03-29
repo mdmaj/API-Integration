@@ -19,6 +19,13 @@ app.get('/api/products', (req, res) =>{
             price: 19.99, 
             description: 'This is product 2' ,
             Image: 'https://example.com/product2.jpg'
+        },
+        { 
+            id: 3, 
+            name: 'steel table', 
+            price: 25, 
+            description: 'This is product 3' ,
+            Image: 'https://example.com/product3.jpg'
         }
 
 

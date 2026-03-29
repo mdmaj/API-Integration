@@ -14,6 +14,16 @@ const App = () => {
     <>
     <h1>API Integration Learning</h1>
     <h2>NUmber of Products =  {products.length}</h2>
+    <ul>
+      {products.map(product => (
+        <li key={product.id}>
+          <h3>{product.name}</h3>
+          <p>Price: ${product.price}</p>
+          <p>Description: {product.description}</p>
+          <img src={product.Image} alt={product.name} width="200" />
+        </li>
+      ))}
+    </ul>
     
 
     </>
